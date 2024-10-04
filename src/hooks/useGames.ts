@@ -31,7 +31,8 @@ const useGames = (gameQuery: GameQuery | null) =>
     getNextPageParam: (lastPage, allPages) => {
       return lastPage.next?  allPages.length + 1 : undefined;
     },
-    initialPageParam:1
+    initialPageParam:1,
+    staleTime: 24*60*60*1000, //24 h
   });
 
 // useData<Game>(
