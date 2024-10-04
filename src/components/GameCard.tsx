@@ -3,10 +3,8 @@ import {
   Card,
   CardBody,
   Heading,
-  Hide,
   HStack,
   Image,
-  Text,
 } from "@chakra-ui/react";
 import { PlatformIconList } from "./PlatformIconList";
 import { CriticScore } from "./CriticScore";
