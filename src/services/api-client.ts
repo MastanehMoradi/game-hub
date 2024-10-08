@@ -29,7 +29,10 @@ export class APIClient<T> {
   post = (data: T) => {
     return axiosInstance.post(this.endpoint, data).then((res) => res.data);
   };
-}
 
+  get = (id: number | string) => {
+    return axiosInstance.get<T>(this.endpoint + "/" + id).then((res) => res.data);
+  };
+}
 
 export default APIClient;
