@@ -2,14 +2,8 @@
 import genres from '../data/genres'
 import APIClient from '../services/api-client';
 import ms from 'ms'
+import { Genre } from '../entities/Genre';
  
-
-
-export interface Genre {
-    id: number;
-    name: string;
-    image_background: string;
-}
 
 
 // const useGenres = () => useData<Genre>('/genres');
